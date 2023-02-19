@@ -10,6 +10,10 @@ function NavBar (){
             <NavLink to="/roster">
                 Roster
             </NavLink>
+            <NavLink to= "/lineup">
+                Lineup
+             </NavLink>   
+
         </div>
     )
 
