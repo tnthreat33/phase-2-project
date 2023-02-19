@@ -5,7 +5,7 @@ import PlayerForm from './PlayerForm';
 function Home({players, setPlayers}) {
  
   return (
-    <div >
+    <div className= "home">
       <h1>
         Center Grove Softball
       </h1>
