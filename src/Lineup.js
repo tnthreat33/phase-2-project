@@ -9,17 +9,15 @@ function Lineup({ lineup }) {
   }
 
   return (
-    <div>
+    <div className="Lineup">
       <h2>Current Lineup</h2>
       {currentLineup.length > 0 ? (
         currentLineup.map((player) => (
           <div key={player.id}>
             <h4>
-              {player.name} #{player.jersey}
+            #{player.jersey} {player.name} 
             </h4>
-            <li>Position: {player.position}</li>
-            <li>Class: {player.class}</li>
-            <button onClick={() => removePlayer(player.id)}>Remove Player</button>
+            <button onClick={() => removePlayer(player.id)}>X</button>
           </div>
         ))
       ) : (
