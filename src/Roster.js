@@ -1,3 +1,6 @@
+import React from "react";
+import './App.css';
+
 function Roster({ players, handleRemovePlayer, handleAddToLineup }) {
   function handleDeleteClick(player) {
     fetch(`http://localhost:3000/players/${player.id}`, {
