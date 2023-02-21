@@ -17,7 +17,6 @@ function Roster({ players, handleRemovePlayer, handleAddToLineup }) {
         <h4>
           {player.name} #{player.jersey}
         </h4>
-        <img src= {player.image} />
         <p>Position: {player.position}</p>
         <p>Class: {player.class}</p>
         <button onClick={() => handleDeleteClick(player)}>Remove From Roster</button>
