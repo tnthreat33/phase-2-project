@@ -24,7 +24,7 @@ function PlayerForm({ players, setPlayers }) {
       .then((res) => res.json())
       .then((data) => {
         setPlayers([data, ...players]);
-        setForm({});
+        setForm({})
       });
   };
 
