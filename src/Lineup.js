@@ -18,7 +18,7 @@ function Lineup({ lineup }) {
             <h4>
             #{player.jersey} {player.name} 
             </h4>
-            <button onClick={() => removePlayer(player.id)}>X</button>
+            <button onClick={() => removePlayer(player.id)}>x</button>
           </div>
         ))
       ) : (
