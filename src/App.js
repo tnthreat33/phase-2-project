@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Roster from './Roster';
 import Home from './Home';
 import Lineup from './Lineup';
+import './App.css';
 
 function App() {
   const [players, setPlayers] = useState([]);
