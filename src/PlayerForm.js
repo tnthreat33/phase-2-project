@@ -28,6 +28,7 @@ function PlayerForm({ players, setPlayers }) {
       });
   };
 
+  
   return (
     <div className= "form">
       <h2>New Player</h2>
