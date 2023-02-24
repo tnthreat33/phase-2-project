@@ -1,7 +1,6 @@
 import React from 'react'
 import PlayerForm from './PlayerForm';
 
-
 function Home({players, setPlayers}) {
  
   return (
