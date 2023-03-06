@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:3000/players')
       .then((r) => r.json())
-      .then(setPlayers);
+      .then((data) => setPlayers(data));
   }, []);
 
   function handleRemovePlayer(id) {
@@ -23,6 +23,10 @@ function App() {
 
   function handleAddToLineup(player) {
     setLineup([...lineup, player]);
+  }
+  function removeLineupPlayer(id) {
+    const updatedLineup = lineup.filter(player => player.id !== id);
+    setLineup(updatedLineup);
   }
 
   return (
@@ -38,9 +42,9 @@ function App() {
           />
         </Route>
         <Route path="/lineup">
-          <Lineup lineup={lineup} />
+          <Lineup lineup={lineup} removePlayer= {removeLineupPlayer}/>
         </Route>
-        <Route exact path="/">
+        <Route  path="/">
           <Home players={players} setPlayers={setPlayers} />
         </Route>
       </Switch>
