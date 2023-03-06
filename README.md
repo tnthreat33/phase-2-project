@@ -1,7 +1,9 @@
 Center Grove Softball React App
+
 This is a simple React application that allows users to view, add, and remove players from a softball roster and add them to a lineup. It uses React Router for navigation and useState and useEffect hooks for state management.
 
 How to Run
+
 Clone the repository: git clone git@github.com:tnthreat33/phase-2-project.git
 Navigate to the project directory: cd phase-2-project
 Install dependencies: npm install
@@ -11,6 +13,7 @@ Navigate to json-server: cd json-server-template
 Start db.json: npm run dev 
 
 Features
+
 View a list of players on the roster
 Add a new player to the roster
 Remove a player from the roster
@@ -19,12 +22,14 @@ Remove a player from the lineup
 Navigate between pages using React Router
 
 Dependencies
+
 This application uses the following dependencies:
 React
 React Router
 
 
 Folder Structure
+
 ├── App.js
 ├── index.js
 ├── NavBar.js
@@ -46,6 +51,7 @@ PlayerForm.js - A component that contains a form to add a new player to the rost
 App.css and index.css - CSS files for styling the application.
 
 API Reference
+
 This project uses a JSON server with the following endpoints:
 
 GET /players - returns a list of all players
