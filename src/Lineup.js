@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
-function Lineup({ lineup }) {
-  const [currentLineup, setCurrentLineup] = useState(lineup);
-
-  function removePlayer(id) {
-    const updatedLineup = currentLineup.filter(player => player.id !== id);
-    setCurrentLineup(updatedLineup);
-  }
-
+function Lineup({ lineup, removePlayer }) {
+  
   return (
     <div className="Lineup">
       <h2>Current Lineup</h2>
-      {currentLineup.length > 0 ? (
-        currentLineup.map((player) => (
+      {lineup.length > 0 ? (
+        lineup.map((player) => (
           <div key={player.id}>
             <h4>
             #{player.jersey} {player.name} 
