@@ -5,11 +5,17 @@ This is a simple React application that allows users to view, add, and remove pl
 How to Run
 
 Clone the repository: git clone git@github.com:tnthreat33/phase-2-project.git
+
 Navigate to the project directory: cd phase-2-project
+
 Install dependencies: npm install
+
 Start the server: npm start
+
 Open your web browser and navigate to http://localhost:3000
+
 Navigate to json-server: cd json-server-template
+
 Start db.json: npm run dev 
 
 Features
