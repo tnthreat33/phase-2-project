@@ -25,16 +25,22 @@ Features
 View a list of players on the roster
 
 Add a new player to the roster
+
 Remove a player from the roster
+
 Add a player to the lineup
+
 Remove a player from the lineup
+
 Navigate between pages using React Router
+
+
 
 Dependencies
 
 This application uses the following dependencies:
-React
-React Router
+
+React and React Router
 
 
 Folder Structure
@@ -51,13 +57,21 @@ Folder Structure
 └── README.md
 
 App.js - The main component that contains the React Router setup and state management for players and lineup.
+
 index.js - The entry point for the application that renders the App component.
+
 NavBar.js - A reusable component that contains links to navigate between pages.
+
 Roster.js - A component that displays the roster of players and allows for adding and removing players.
+
 Home.js - A component that serves as the home page and contains a form to add new players.
+
 Lineup.js - A component that displays the current lineup and allows for removing players from the lineup.
+
 PlayerForm.js - A component that contains a form to add a new player to the roster.
+
 App.css and index.css - CSS files for styling the application.
+
 
 API Reference
 
