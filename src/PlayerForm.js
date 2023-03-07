@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function PlayerForm({ players, setPlayers }) {
+function PlayerForm({ addPlayer}) {
   const [form, setForm] = useState({});
 
   const handleChange = (e) => {
@@ -23,8 +23,7 @@ function PlayerForm({ players, setPlayers }) {
     })
       .then((res) => res.json())
       .then((data) => {
-        setPlayers([data, ...players]);
-        setForm({})
+        addPlayer(data);
       });
   };
 

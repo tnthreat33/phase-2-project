@@ -20,6 +20,9 @@ function App() {
     const newPlayerList = players.filter((player) => player.id !== id);
     setPlayers(newPlayerList);
   }
+  function handleAddPlayer(player){
+    setPlayers([...players, player])
+  }
 
   function handleAddToLineup(player) {
     setLineup([...lineup, player]);
@@ -45,7 +48,7 @@ function App() {
           <Lineup lineup={lineup} removePlayer= {removeLineupPlayer}/>
         </Route>
         <Route  path="/">
-          <Home players={players} setPlayers={setPlayers} />
+          <Home addPlayer = {handleAddPlayer} />
         </Route>
       </Switch>
     </div>
