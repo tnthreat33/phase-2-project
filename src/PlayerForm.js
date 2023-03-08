@@ -24,6 +24,7 @@ function PlayerForm({ addPlayer}) {
       .then((res) => res.json())
       .then((data) => {
         addPlayer(data);
+        setForm({})
       });
   };
 
@@ -36,24 +37,28 @@ function PlayerForm({ addPlayer}) {
           onChange={handleChange}
           type="text"
           name="name"
+          value= {form.name || ''}
           placeholder="Player name"
         />
         <input
           onChange={handleChange}
           type="text"
           name="position"
+          value= {form.position || ''}
           placeholder="Position"
         />
         <input
           onChange={handleChange}
           type="text"
           name="jersey"
+          value= {form.jersey || ''}
           placeholder="Jersey Number"
         />
         <input
           onChange={handleChange}
           type="text"
           name="class"
+          value= {form.class || ''}
           placeholder="Class"
         />
         <button type="submit">Add Player</button>
