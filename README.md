@@ -49,6 +49,7 @@ Folder Structure
 ├── index.js
 ├── NavBar.js
 ├── Roster.js
+    ├── PlayerCard.js
 ├── Home.js
 ├── Lineup.js
 ├── PlayerForm.js
@@ -63,6 +64,8 @@ index.js - The entry point for the application that renders the App component.
 NavBar.js - A reusable component that contains links to navigate between pages.
 
 Roster.js - A component that displays the roster of players and allows for adding and removing players.
+
+PlayerCard.js- A component that renders all of the player cards 
 
 Home.js - A component that serves as the home page and contains a form to add new players.
 
