@@ -1,4 +1,5 @@
 import React from "react";
+import PlayerCard from "./PlayerCard";
 
 
 function Roster({ players, handleRemovePlayer, handleAddToLineup }) {
@@ -14,18 +15,8 @@ function Roster({ players, handleRemovePlayer, handleAddToLineup }) {
   }
 
   return (
-    players.length > 0 &&
-    players.map((player) => (
-      <div key={player.id} className="card">
-        <h4>
-          {player.name} #{player.jersey}
-        </h4>
-        <p>Position: {player.position}</p>
-        <p>Class: {player.class}</p>
-        <button onClick={() => handleDeleteClick(player)}>Remove From Roster</button>
-        <button onClick={() => handleAddClick(player)}>Add to Lineup</button>
-      </div>
-    ))
+    <PlayerCard players={players} handleDeleteClick={handleDeleteClick} handleAddClick={handleAddClick}/>
+    
   );
 }
 
